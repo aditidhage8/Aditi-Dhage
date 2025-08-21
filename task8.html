@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Background Image with Text and Button</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .hero-section {
+      background-image: url('https://th.bing.com/th/id/OIP.8LP36rWzcM3dP_iNtSq3egHaEm?w=290&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3'); 
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      position: relative;
+      color: rgb(12, 1, 1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .content {
+      background-color: rgba(238, 232, 232, 0.5);
+      padding: 40px;
+      border-radius: 12px;
+    }
+
+    .content h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+
+    .content button {
+      padding: 12px 25px;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      background-color: #ff6f61;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .content button:hover {
+      background-color: #891404;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hero-section">
+    <div class="content">
+      <h1>Welcome to Our Website</h1>
+      <button>Get Started</button>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+Here is the HTML program that replicates both parts of the image you shared:
+
+
+---
+
+✅ Part 1: Two side-by-side blocks –
+
+Left: Person image
+
+Right: Solid color (blue) block
+
+
+✅ Part 2: Grid of 8 image blocks using <div>
+
+
+---
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+    
+        .row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+
+        .left-img img {
+            width: 200px;
+            height: auto;
+        }
+
+        .right-box {
+            width: 150px;
+            height: 200px;
+            background-color: deepskyblue;
+        }
+
+        
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 100px);
+            grid-gap: 10px;
+        }
+
+        .grid-container div {
+            width: 100px;
+            height: 100px;
+            background-color: #ccc;
+            border: 1px solid #333;
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+    <h3>1. Replicate below image</h3>
+    <div class="row">
+        <div class="left-img">
+            <img src="https://th.bing.com/th/id/OIP.2rrg4LqY1mz4O5YgRkSzXwHaLH?w=115&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3" alt="Chris Tomlin">
+        </div>
+        <div class="right-box"></div>
+    </div>
+
+    
+    <h3>2. Replicate below image. Add images in 8 div.</h3>
+    <div class="grid-container">
+        <div style="background-image: url('https://th.bing.com/th/id/OIP.2rrg4LqY1mz4O5YgRkSzXwHaLH?w=115&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3')"></div>
+        <div style="background-image: url('https://th.bing.com/th/id/OIP.2rrg4LqY1mz4O5YgRkSzXwHaLH?w=115&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3')"></div>
+        <div style="background-image: url('https://th.bing.com/th/id/OIP.2rrg4LqY1mz4O5YgRkSzXwHaLH?w=115&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3')"></div>
+        <div style="background-image: url('https://th.bing.com/th/id/OIP.2rrg4LqY1mz4O5YgRkSzXwHaLH?w=115&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3')"></div>
+        <div style="background-image: url('https://th.bing.com/th/id/OIP.2rrg4LqY1mz4O5YgRkSzXwHaLH?w=115&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3')"></div>
+        <div style="background-image: url('https://th.bing.com/th/id/OIP.2rrg4LqY1mz4O5YgRkSzXwHaLH?w=115&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3')"></div>
+        <div style="background-image: url('https://th.bing.com/th/id/OIP.2rrg4LqY1mz4O5YgRkSzXwHaLH?w=115&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3')"></div>
+        <div style="background-image: url('https://th.bing.com/th/id/OIP.2rrg4LqY1mz4O5YgRkSzXwHaLH?w=115&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3')"></div>
+    </div>
+
+</body>
+</html>
+

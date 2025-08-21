@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Styled Div with Image and Button</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="box">
+    <div class="overlay">
+      <h1>Welcome to the Gallery</h1>
+      <p>Explore beautiful content with ease.</p>
+      <button>Explore Now</button>
+      <br><br>
+      <a href="#">Learn More</a>
+    </div>
+  </div>
+
+  <div class="form-area">
+    <input type="text" placeholder="Enter your name">
+  </div>
+
+.box {
+  margin: 50px auto;
+  width: 90%;
+  max-width: 800px;
+  height: 400px;
+  background-image: url('https://th.bing.com/th/id/OIP.rPt0rmaCUUa7zj42RQIUFwHaEK?w=301&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7');
+  background-size: cover;
+  background-position: center;
+  border: 5px solid #333;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  border-radius: 10px;
+  opacity: 0.95;
+}
+
+
+.overlay h1 {
+  font-size: 36px;
+  font-family: 'Segoe UI', sans-serif;
+  margin-bottom: 10px;
+}
+
+.overlay p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.overlay button {
+  padding: 12px 25px;
+  background-color: #ff5733;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.overlay button:hover {
+  background-color: #c94023;
+}
+.overlay a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: 2px solid transparent;
+}
+
+.overlay a:hover {
+  color: #ffcc00;
+  border-color: #ffcc00;
+}
+
+.form-area {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.form-area input {
+  padding: 10px 15px;
+  width: 300px;
+  font-size: 16px;
+}
+input::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+.overlay > button {
+  font-size: 16px;
+}
+.overlay h1::after {
+  content: " ✨";
+}
+
+.box {
+  overflow: hidden;
+}
+</body>
+</html>
